@@ -1,10 +1,8 @@
-name: "Hanet Camera Bridge Pro"
-description: "Addon này đã được mã hóa bảo mật hoàn toàn."
-version: "3.0.1"
-slug: "hanet_bridge_pro"
-arch:
-  - amd64
-  - aarch64
-  - armv7
-# HA sẽ tự động thay {arch} bằng chip máy khách để lấy đúng bản Nuitka đã build
-image: "ghcr.io/trankhanhduy2929-beep/my-addon-{arch}"
+{
+  "name": "Hanet Camera Bridge Pro",
+  "version": "2.6.0",
+  "slug": "hanet_bridge_pro",
+  "description": "Bản quyền bởi trankhanhduy2929-beep",
+  "arch": ["aarch64", "amd64", "armv7"],
+  "image": "ghcr.io/trankhanhduy2929-beep/hanet_bridge_pro-{arch}"
+}
