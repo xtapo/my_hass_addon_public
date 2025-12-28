@@ -1,9 +1,10 @@
 name: "Hanet Camera Bridge"
-version: "2.5.0" # Mỗi lần có bản mới, bạn chỉ cần sửa số này ở Repo Public
+description: "Addon này đã được mã hóa bảo mật hoàn toàn."
+version: "2.5.0"
 slug: "hanet_bridge"
 arch:
   - amd64
   - aarch64
   - armv7
-# Home Assistant sẽ tự thay {arch} bằng kiến trúc máy khách đang dùng
+# HA sẽ tự động thay {arch} bằng chip máy khách để lấy đúng bản Nuitka đã build
 image: "ghcr.io/trankhanhduy2929-beep/my-addon-{arch}"
