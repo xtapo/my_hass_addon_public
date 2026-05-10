@@ -1,12 +1,12 @@
 name: "YouTube Music Cinematic"
 description: "Trình phát nhạc YouTube cao cấp: Tự đề xuất, Infinite Scroll, Proxy Stream & Favorites"
-version: "1.20.0"
+version: "1.20.17"
 slug: "youtube_cast_addon"
 arch:
   - aarch64
   - amd64
-  - armv7
   - armhf
+  - armv7
 init: false
 panel_icon: "mdi:music-box-multiple"
 panel_title: "YT Music"
@@ -16,5 +16,3 @@ hassio_role: manager
 hassio_api: true
 homeassistant_api: true
 
-# XÓA BỎ ":latest" - Supervisor sẽ tự ghép version "1.14.0" vào sau {arch}
-image: "ghcr.io/trankhanhduy2929-beep/youtube_cast_addon-{arch}"
