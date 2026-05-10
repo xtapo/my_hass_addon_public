@@ -15,5 +15,5 @@
   "map": ["config:rw", "share:rw"],
   "options": {},
   "schema": {}
-  "image": "ghcr.io/trankhanhduy2929-beep/ai_proxy_router-{arch}"
+  "image": "ghcr.io/trankhanhduy2929-beep/hanet_bridge_pro-{arch}"
 }
