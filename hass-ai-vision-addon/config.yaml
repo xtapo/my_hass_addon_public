@@ -1,0 +1,21 @@
+name: "AI Vision Entity Describer"
+version: "1.1.1"
+slug: "ai_vision_entity_describer"
+description: "AI Vision Pro: persistent config, compact AI camera history table, and retention limits"
+url: "https://local.addon"
+arch:
+  - amd64
+  - aarch64
+  - armv7
+init: false
+startup: services
+boot: auto
+homeassistant_api: true
+ingress: true
+ingress_port: 1237
+panel_icon: mdi:image-search
+panel_title: AI Vision
+ports:
+  1237/tcp: 1237
+map:
+  - addon_config:rw
