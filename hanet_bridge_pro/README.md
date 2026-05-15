@@ -8,15 +8,17 @@ Truy cập vào Home Assistant qua Samba Share hoặc File Editor/Studio Code Se
 
 Tạo một thư mục mới bên trong addons, đặt tên là hanet_bridge_pro.
 
-Copy toàn bộ 4 file sau vào thư mục addons/hanet_bridge_pro:
+Copy toàn bộ 5 file sau vào thư mục addons/hanet_bridge_pro:
 
 bridge.py
 
 Dockerfile
 
-config.json
+config.yaml
 
 icon.png
+
+run.sh
 
 Bước 2: Cài đặt Add-on
 Vào Settings (Cài đặt) > Add-ons.

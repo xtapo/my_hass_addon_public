@@ -1,6 +1,6 @@
 name: "AI Proxy Router"
 description: "Quản lý xoay vòng API Key thông minh cho Groq, Gemini, OpenRouter. Tự động định tuyến Vision và theo dõi Analytics."
-version: "1.0.7"
+version: "1.0.6"
 slug: "ai_proxy_router"
 init: false
 arch:
