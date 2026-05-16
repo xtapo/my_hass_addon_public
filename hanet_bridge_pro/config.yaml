@@ -1,5 +1,5 @@
 name: Hanet Camera Bridge Pro
-version: 3.0.2
+version: 3.0.9
 slug: hanet_bridge_pro
 description: Kết nối Hanet AI Camera qua MQTT. Tích hợp nhận diện khuôn mặt nâng cao (Face Compare). Bản PRO
 url: https://github.com/home-assistant/addons
