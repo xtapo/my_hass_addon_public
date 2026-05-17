@@ -1,0 +1,45 @@
+name: "PicoClaw"
+slug: "picoclaw"
+version: "0.4.4"
+description: "Run PicoClaw launcher (Web UI) inside Home Assistant"
+url: "https://github.com/sipeed/picoclaw"
+arch:
+  - aarch64
+  - amd64
+init: false
+startup: services
+boot: auto
+ingress: true
+ingress_port: 18800
+panel_icon: mdi:robot
+panel_title: PicoClaw
+ingress_entry: /
+ports:
+  18800/tcp: 18800
+  18790/tcp: 18790
+ports_description:
+  18800/tcp: PicoClaw Launcher Web UI
+  18790/tcp: PicoClaw gateway health/API
+map:
+  - addon_config:rw
+  - share:rw
+  - ssl
+options:
+  launcher_token: ""
+  public_mode: true
+  timezone: "Asia/Ho_Chi_Minh"
+  update_check_enabled: true
+  update_check_interval_hours: 12
+  notify_ha_on_new_version: true
+  picoclaw_version: "latest"
+  picoclaw_auto_install_on_start: false
+schema:
+  launcher_token: str?
+  public_mode: bool
+  timezone: str?
+  update_check_enabled: bool
+  update_check_interval_hours: int(1,168)
+  notify_ha_on_new_version: bool
+  picoclaw_version: str?
+  picoclaw_auto_install_on_start: bool
+image: "ghcr.io/trankhanhduy2929-beep/picoclaw-{arch}"
